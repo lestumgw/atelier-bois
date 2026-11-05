@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Atelier Bois, artisan menuisier dans le Finistère. Menuiserie sur mesure, cuisines, dressings, escaliers et aménagements intérieurs.">
+  <title>Atelier Bois | Menuisier sur mesure dans le Finistère</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><div class="nav"><a class="logo" href="#accueil">ATELIER BOIS</a><button id="menuToggle">☰</button>
+<nav id="menuMobile" aria-label="Navigation principale"><a href="#prestations">Prestations</a><a href="#realisations">Réalisations</a><a href="#apropos">À propos</a><a href="#contact">Contact</a></nav></div></header>
+  <main>
+    <div class="hero" id="accueil"><div class="wrap"><h1>Votre artisan menuisier dans le Finistère.</h1><p>Menuiserie artisanale, aménagement intérieur et créations sur mesure dans le Finistère.</p><a class="btn" href="#contact">Demander un devis</a></div></div>
+    <section class="cream" id="prestations"><div class="wrap"><h2>Nos prestations</h2><p class="intro">Découvrez une sélection d'aménagements et de créations sur mesure, où chaque détail compte.</p><div class="cards">
+      <article class="card"><img src="images/agencement.jpg" alt="Menuiserie sur mesure "><div class="card-body"><h3>Menuiserie sur mesure</h3><p>Portes, placards, rangements et mobilier adaptés à votre intérieur.</p></div></article>
+      <article class="card"><img src="images/cuisine.jpg" alt="Agencement interieur"><div class="card-body"><h3>Agencement intérieur</h3><p>Cuisines, dressings et optimisation de vos espaces de vie.</p></div></article>
+      <article class="card"><img src="images/terrasse.jpg" alt="Terrasse en bois"><div class="card-body"><h3>Terrasses et extérieur</h3><p>Terrasses, habillages bois et aménagements extérieurs.</p></div></article>
+    </div></div></section>
+    <section id="realisations"><div class="wrap"><h2>Nos réalisations</h2><p class="intro">Découvrez une sélection d'aménagements et de créations sur mesure, où chaque détail compte.</p><div class="gallery"><div class="projet">
+  <img src="images/dressing.jpg" alt="Dressing sur mesure">
+  <div class="projet-titre">Dressing sur mesure</div>
+</div><div class="projet">
+  <img src="images/escalier.jpg" alt="Escalier en bois sur mesure">
+  <div class="projet-titre">Escalier sur mesure</div>
+</div><div class="projet">
+  <img src="images/terrasse.jpg" alt="Terrasse en bois">
+  <div class="projet-titre">Terrasse en bois</div>
+</div></div></div></section>
+    <section class="cream" id="apropos"><div class="wrap about"><div><h2>Un artisan à votre écoute</h2><p>Chez Atelier Bois, chaque projet commence par une rencontre. Nous prenons le temps de comprendre vos besoins pour concevoir des ouvrages pratiques, durables et soignés.</p><p>Basés dans le Finistère, nous intervenons auprès des particuliers pour leurs projets de menuiserie et d'agencement.</p><a class="btn" href="#contact">Parlons de votre projet</a></div><img src="images/artisan.png" alt="Artisan menuisier au travail"></div></section>
+    <section class="contact" id="contact"><div class="wrap"><h2>Contactez-nous</h2><p class="intro">Un projet en tête ? Décrivez-le et demandez un premier échange.</p><div class="contact-grid"><div><p><strong>Atelier Bois</strong></p><p>Finistère, Bretagne</p><p>Téléphone : 06 00 00 00 00</p><p>Email : contact@exemple.fr</p><p class="hint">Coordonnées fictives — site de démonstration.</p></div><form id="contactForm"><p class="hint">Formulaire de démonstration : aucune donnée n’est transmise.</p><input id="nom" name="nom" type="text" placeholder="Votre nom" required aria-label="Votre nom"><input id="email" name="email" type="email" placeholder="Votre adresse e-mail" required aria-label="Votre adresse e-mail"><textarea id="message" name="message" placeholder="Décrivez votre projet" required aria-label="Votre message"></textarea><button class="btn" type="submit">Envoyer ma demande</button><p id="confirmationContact" style="display: none;">
+  Démonstration : aucun message n’a été envoyé.
+</p></form></div></div></section>
+</main>
+  <footer>© <span id="annee"></span> Atelier Bois — Site de démonstration</footer>
+   <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,421 @@
+
+ :root {
+  --forest: #141414;
+  --sand: #F7F5F0;
+  --gold: #C9A46C;
+  --ink: #242424;
+}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}a{color:inherit;text-decoration:none}header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #0001}.nav{max-width:1100px;margin:auto;padding:17px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-size:22px;font-weight:800;color:var(--forest)}nav{display:flex;gap:22px;flex-wrap:wrap}nav a:hover{color:#a47741}.hero{background:linear-gradient(100deg,#17291fe0,#17291f9c),url('images/atelier.jpg') center/cover;min-height:520px;display:flex;align-items:center;color:#fff}.wrap{max-width:1100px;margin:auto;padding:0 24px;width:100%}.hero h1{font-size:clamp(36px,5vw,62px);line-height:1.12;max-width:740px;margin:0 0 20px}.hero p{max-width:600px;font-size:19px}.btn{display:inline-block;background:var(--gold);color:#f6f6f6;padding:20px 40px;border-radius:40px;font-weight:bold;border:0;cursor:pointer}.btn:hover{background:#df7f7f}section{padding:80px 0}h2{font-size:clamp(28px,3vw,39px);line-height:1.2;margin:0 0 18px}.intro{max-width:720px;color:#5c625e;margin-bottom:35px}.cream{background:var(--sand)}.cards,.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:white;border-radius:9px;overflow:hidden;box-shadow:0 4px 20px #0000000c}.card img,.gallery img{width:100%;height:225px;object-fit:cover;display:block;background:#ded9cf}.card-body{padding:22px}.card h3{margin:0 0 9px}.gallery img{border-radius:9px}.about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about img{width:100%;height:350px;object-fit:cover;border-radius:9px;background:#ddd}.contact{background:var(--forest);color:white}.contact .intro{color:#e3e8e4}.contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:50px}form{display:grid;gap:13px}input,textarea{width:100%;padding:14px;border-radius:5px;border:1px solid #cbd1cb;font:inherit}textarea{min-height:130px;resize:vertical}footer{background:#182a21;color:#eee;text-align:center;padding:25px;font-size:14px}.hint{font-size:13px;opacity:.85}@media(max-width:750px){.nav{align-items:flex-start;flex-direction:column}nav{gap:12px;font-size:14px}.hero{min-height:460px}.cards,.gallery,.about,.contact-grid{grid-template-columns:1fr}section{padding:55px 0}.about{gap:25px}}
+  .avantages {
+  background: #f5f1e9;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.avantages h2 {
+  color: #315D46;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.avantages p {
+  color: #333333;
+  font-size: 18px;
+}
+ .avantages-contenu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.avantages-contenu img {
+  width: 45%;
+  border-radius: 12px;
+}
+
+.avantages-texte {
+  flex: 1;
+  text-align: left;
+}
+ @media (max-width: 768px) {
+  .avantages-contenu {
+    flex-direction: column;
+  }
+
+  .avantages-contenu img {
+    width: 100%;
+  }
+
+  .avantages-texte {
+    text-align: center;
+  }
+}
+ /* Bouton du menu mobile */
+#menuToggle {
+  display: none;
+  background: #315D46;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.realisations-page {
+      max-width: 1100px;
+      margin: 70px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .realisations-page h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .galerie {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 45px;
+    }
+
+    .galerie img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .galerie h3 {
+      margin-top: 15px;
+    }
+    /* Effet au survol des réalisations */
+
+.galerie img {
+  transition: transform 0.3s ease;
+}
+
+.galerie img:hover {
+  transform: scale(1.05);
+}
+/* MENU PREMIUM */
+
+header {
+  background: #141414;
+}
+
+.logo {
+  color: #C9A46C;
+}
+
+nav a {
+  color: #FFFFFF;
+}
+
+nav a:hover {
+  color: #C9A46C;
+}
+/* BOUTONS PREMIUM */
+
+.btn {
+  background: #C9A46C;
+  color: #141414;
+  padding: 17px 34px;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #FFFFFF;
+  color: #141414;
+  transform: translateY(-3px);
+}
+/* ACCUEIL LUXE */
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.80),
+      rgba(0, 0, 0, 0.20)
+    ),
+    url("images/atelier.jpg") center / cover no-repeat;
+}
+/* TITRE ACCUEIL PREMIUM */
+
+.hero h1 {
+  font-size: clamp(42px, 6vw, 76px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  max-width: 850px;
+}
+/* ANIMATION DU TITRE */
+
+@keyframes apparitionTitre {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1 {
+  animation: apparitionTitre 1.2s ease-out both;
+}
+/* ANIMATION EN CASCADE */
+
+.hero p {
+  animation: apparitionTitre 1.2s ease-out 0.3s both;
+}
+
+.hero .btn {
+  animation: apparitionTitre 1.2s ease-out 0.6s both;
+}
+/* MENU EFFET VERRE */
+
+header {
+  background: rgba(20, 20, 20, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+/* CARTES PREMIUM */
+
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+/* ZOOM SUR LES PHOTOS DES PRESTATIONS */
+
+.card img {
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+/* GALERIE PREMIUM */
+
+.gallery img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.20);
+}
+/* LIGNE DORÉE SOUS LES TITRES */
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #C9A46C;
+  margin-top: 15px;
+}
+/* PHOTO À PROPOS PREMIUM */
+
+.about img {
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.about img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.20);
+}
+/* PHOTOGRAPHIES DES PRESTATIONS */
+
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+/* EFFET PREMIUM SUR LES CARTES */
+
+.card {
+  overflow: hidden;
+}
+
+.card img {
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.06);
+}
+/* GALERIE PREMIUM - NOS REALISATIONS */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+/* EFFET PREMIUM - GALERIE REALISATIONS */
+
+.gallery {
+  overflow: hidden;
+}
+
+.gallery img {
+  transition: transform 0.5s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+/* TITRES SUR LES REALISATIONS */
+
+.projet {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.projet img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.projet-titre {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 35px 20px 20px;
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.85)
+  );
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* CORRECTION DU BANDEAU BLANC */
+
+.gallery .projet {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.gallery .projet-titre {
+  line-height: 1.4;
+}
+/* CORRECTION IMAGE DRESSING */
+
+.gallery .projet {
+  height: 320px;
+}
+
+.gallery .projet img {
+  height: 100%;
+  display: block;
+}
+/* VERSION MOBILE - NOS REALISATIONS */
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+/* PIED DE PAGE - FOOTER */
+
+footer {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  border-top: 1px solid #333333;
+}
+
+/* MENU MOBILE — ANIMATION FLUIDE ET UNIQUE */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #menuToggle {
+    display: block;
+    margin-left: auto;
+    background: transparent;
+    color: #C9A46C;
+    border: 1px solid #C9A46C;
+    border-radius: 6px;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+  }
+
+  #menuToggle:active {
+    transform: scale(0.94);
+  }
+
+  #menuMobile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: max-height 0.35s ease, opacity 0.25s ease,
+                transform 0.35s ease, visibility 0.35s;
+  }
+
+  #menuMobile.ouvert {
+    max-height: 320px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  #menuMobile a {
+    display: block;
+    padding: 11px 4px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #menuMobile, #menuToggle {
+    transition: none;
+  }
+}
